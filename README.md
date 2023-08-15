@@ -12,7 +12,7 @@ This code follows the simulated annealing method used in [Carpalx](http://mkweb.
 * A penalty for reversing a roll at the end of the hand, i.e. using the ring, pinky, then middle finger of the same hand. Examples: WAD. Since the movement of the ring finger is partially dependent on that of the middle finger, this motion is particularly tricky and therefore inaccurate. In Dvorak, typing "install" may sometimes result in "instnall" or "insntall" as a result of this dependency.
 * A penalty for using the same hand four times in a row. Examples: EVER, WERE, LOOK. Using the same hand for too many letters in a row fatigues the hand creates the opportunity for error.
 * A penalty for alternating hands three times in a row. Examples: WITH, IGHT, WHEN. Alternating too often may cause the timing of the alternation to fall apart, for example resulting in "teh" or "hte" for "the".
-* A slight penalty for rolling outwards, accompanied by a slight award (negative penalty) for rolling inwards, since a rolling in motion feels more natural than a rolling out motion.
+* A slight bonus for rolling outwards.
 
 ## Installing and running
 

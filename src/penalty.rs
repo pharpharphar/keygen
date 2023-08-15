@@ -328,7 +328,7 @@ fn penalize<'a, 'b>(
 		if curr.hand == old1.hand &&
 		   old1.finger != Finger::Thumb &&
 		   is_roll_out(curr.finger, old1.finger) {
-			let penalty = 0.125 * count;
+			let penalty = -0.125 * count;
 			if detailed {
 				*result[9].high_keys.entry(slice2).or_insert(0.0) += penalty;
 				result[9].total += penalty;
@@ -338,7 +338,7 @@ fn penalize<'a, 'b>(
 
 		// 10: Roll in.
 		if curr.hand == old1.hand && is_roll_in(curr.finger, old1.finger) {
-			let penalty = -0.125 * count;
+			let penalty = 0.0 * count;
 			if detailed {
 				*result[10].high_keys.entry(slice2).or_insert(0.0) += penalty;
 				result[10].total += penalty;
