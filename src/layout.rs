@@ -156,6 +156,16 @@ pub static MALTRON_LAYOUT: Layout = Layout(
 	              'A', 'N', 'I', 'S', 'F',   'D', 'T', 'H', 'O', 'R', '"',
 	              '<', '>', 'J', 'G', '?',   ':', 'W', 'K', '_', 'X',
 	              'E', ' '])));
+				  
+pub static MALTRON_MOD_LAYOUT: Layout = Layout(
+	Layer(KeyMap(['q', 'p', 'y', 'c', 'b',   '\0', 'm', 'u', 'z', 'l', '\\',
+	              'a', 'n', 'i', 's', 'f',   'd', 't', 'h', 'o', 'r','\'',
+	              'x', 'v', 'j', 'g', '/',   ';', 'w', 'k', ',', '.', 
+	              'e', ' '])),
+	Layer(KeyMap(['Q', 'P', 'Y', 'C', 'B',   '\0', 'M', 'U', 'Z', 'L', '|',
+	              'A', 'N', 'I', 'S', 'F',   'D', 'T', 'H', 'O', 'R', '"',
+	              'X', 'V', 'J', 'G', '?',   ':', 'W', 'K', '<', '>',
+	              'E', ' '])));
 
 pub static MTGAP_LAYOUT: Layout = Layout(
 	Layer(KeyMap(['y', 'p', 'o', 'u', '-',   'b', 'd', 'l', 'c', 'k', 'j',

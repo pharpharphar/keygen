@@ -144,6 +144,11 @@ fn run_ref(s: &str)
 	simulator::print_result(&layout::WORKMAN_LAYOUT, &penalty);
 	println!("");
 
+	let penalty = penalty::calculate_penalty(&quartads, len, &layout::MALTRON_MOD_LAYOUT, &penalties, true);
+	println!("Reference: MALTRON_MOD");
+	simulator::print_result(&layout::MALTRON_MOD_LAYOUT, &penalty);
+	println!("");
+	
 	let penalty = penalty::calculate_penalty(&quartads, len, &layout::MALTRON_LAYOUT, &penalties, true);
 	println!("Reference: MALTRON");
 	simulator::print_result(&layout::MALTRON_LAYOUT, &penalty);

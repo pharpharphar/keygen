@@ -19,7 +19,10 @@ This code follows the simulated annealing method used in [Carpalx](http://mkweb.
 You'll need a recent-ish version of [Rust](https://www.rust-lang.org/).
 
 Then: `cargo run -- run corpus/books.short.txt`.
+
 To just generate the stats: `cargo run -- run-ref corpus/books.short.txt`.
+
+To write stats to file: `cargo run -- run-ref corpus/books.short.txt > output.txt`.
 
 ## Installing the (upcoming) optimal keyboard layout
 
